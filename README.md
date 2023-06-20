@@ -1,0 +1,1 @@
+# Backend boilerplate - Nodejs, ExpressJs, Mongoose, Typescript, ESLing, Husky, Prettier, Lint-Stage, GlobalErrorHandler, Query SearchFilter, Exact search filter, Pagination & simple CRUD operation 
