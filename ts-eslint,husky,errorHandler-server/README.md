@@ -1,0 +1,1 @@
+# Backend Boilerplate - Nodejs, Typescript, Express, Mongoose, ESLint, Husky, GlobalErrorHandler, Prettier, Lint-stage
