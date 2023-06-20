@@ -15,7 +15,7 @@ app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: true }));
 // Root directory route
 app.get('/', (req, res) => {
-    res.send('Welcome to the digital cow-hut');
+    res.send('Welcome to the Server');
 });
 // application routes
 app.use('/api/v1', routes_1.default);
