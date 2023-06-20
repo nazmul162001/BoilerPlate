@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }))
 // Root directory route
 
 app.get('/', (req: Request, res: Response) => {
-  res.send('Welcome to the digital cow-hut')
+  res.send('Welcome to the Server')
 })
 
 // application routes
