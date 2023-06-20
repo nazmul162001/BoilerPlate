@@ -3,7 +3,7 @@ import cors from 'cors'
 import httpStatus from 'http-status'
 import routes from './app/routes'
 import globalErrorHandlers from './app/middlewares/globalErrorHandler'
-import path from "path"
+import path from 'path'
 const app: Application = express()
 
 // Middleware
@@ -13,9 +13,14 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 // Root directory route
-app.get("/", (req: Request, res: Response)=> {
-  res.sendFile(path.join(__dirname, "./views/index.html"));
-});
+app.get('/', (req: Request, res: Response) => {
+  res.send('Welcome to the Server')
+})
+
+// views file
+// app.get("/", (req: Request, res: Response)=> {
+//   res.sendFile(path.join(__dirname, "./views/index.html"));
+// });
 
 // application routes
 app.use('/api/v1', routes)

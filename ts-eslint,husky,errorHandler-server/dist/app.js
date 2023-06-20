@@ -8,14 +8,15 @@ const cors_1 = __importDefault(require("cors"));
 const http_status_1 = __importDefault(require("http-status"));
 const routes_1 = __importDefault(require("./app/routes"));
 const globalErrorHandler_1 = __importDefault(require("./app/middlewares/globalErrorHandler"));
+const path_1 = __importDefault(require("path"));
 const app = (0, express_1.default)();
 // Middleware
 app.use((0, cors_1.default)());
 app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: true }));
 // Root directory route
-app.get('/', (req, res) => {
-    res.send('Welcome to the Server');
+app.get("/", (req, res) => {
+    res.sendFile(path_1.default.join(__dirname, "./views/index.html"));
 });
 // application routes
 app.use('/api/v1', routes_1.default);
