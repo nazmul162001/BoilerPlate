@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "P:\\BOILERPLATE\\Advanced-Backend-Boilerplate\\logs\\winston\\error\\.f99269ae86cbebc6ad2573ee41c297e607439732-audit.json",
+    "files": [
+        {
+            "date": 1687323284872,
+            "name": "P:\\BOILERPLATE\\Advanced-Backend-Boilerplate\\logs\\winston\\error\\phu-2023-06-21-10-error.log",
+            "hash": "3f7e6c4eb9f8a245f54e4250de3a6277859cf5ad6ea32b05b2563f4de6f1052c"
+        }
+    ],
+    "hashType": "sha256"
+}
